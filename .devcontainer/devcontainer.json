@@ -1,0 +1,28 @@
+{
+    "name": "record-with",
+    "image": "mcr.microsoft.com/devcontainers/java:21-bookworm",
+
+    "features": {
+        "ghcr.io/devcontainers/features/java:1": {
+            "version": "21",
+            "installMaven": "true"
+        }
+    },
+
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "vscjava.vscode-java-pack",
+                "vscjava.vscode-java-test",
+                "vscjava.vscode-maven"
+            ],
+            "settings": {
+                "java.compile.nullAnalysis.mode": "automatic",
+                "java.configuration.updateBuildConfiguration": "automatic"
+            }
+        }
+    },
+
+    "postCreateCommand": "mvn dependency:resolve -q",
+    "remoteUser": "vscode"
+}

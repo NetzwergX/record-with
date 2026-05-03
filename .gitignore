@@ -1,0 +1,37 @@
+# Build output
+target/
+bin/
+build/
+out/
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+
+# Dotfiles — ignore all, re-add what we need
+.*
+!.github/
+!.devcontainer/
+!.vscode/
+!.gitignore
+
+# IDE
+*.iml
+*.iws
+*.ipr
+*.swp
+*~
+
+# Markdown — ignore all except README and LICENSE
+*.md
+!README.md
+!LICENSE.md
